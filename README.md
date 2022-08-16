@@ -1,2 +1,5 @@
-# number-system-conversion-calculator
-It is a Number System Converter Application, Created using HTML, CSS and Javascript.
+# number-system-converter 
+It is a Number System Converter Application.
+
+# Technology used
+HTML, CSS and Javascript.
