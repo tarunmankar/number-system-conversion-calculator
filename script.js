@@ -47,11 +47,11 @@ document.getElementById("convert-button").addEventListener("click", function () 
          fromValue = from.value;
          if (/^[0-9]*$/.test(fromValue)) {
             switch (toNS) {
-               case "Binary": to.value = Math.abs(fromValue).toString(2);
+               case "Binary": to.value = parseInt(fromValue, 10).toString(2);
                   break;
-               case "Hexadecimal": to.value = Math.abs(fromValue).toString(16).toUpperCase();
+               case "Hexadecimal": to.value = parseInt(fromValue, 10).toString(16).toUpperCase();
                   break;
-               case "Octal": to.value = Math.abs(fromValue).toString(8);
+               case "Octal": to.value = parseInt(fromValue, 10).toString(8);
                   break;
                default: to.value = fromValue;
             }
